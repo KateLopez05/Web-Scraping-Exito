@@ -31,8 +31,6 @@ Aplicar técnicas de Web Scraping para recolectar información relevante desde u
 
 ```text
 ## 📁 Estructura del Proyecto
-
-```
 Web Scraping Exito/
 ├── Proyecto/
 │   ├── auditoria.txt               # Registro de ejecuciones y eventos
@@ -53,7 +51,6 @@ Web Scraping Exito/
 ├── .gitignore
 ├── README.md
 └── requirements.txt
-```
 ```
 
 ---
