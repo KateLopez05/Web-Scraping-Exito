@@ -1,0 +1,8 @@
+beautifulsoup4
+selenium
+webdriver-manager
+sqlalchemy
+pandas
+lxml
+requests
+

@@ -1,0 +1,96 @@
+============================================================
+  PIPELINE DE ENRIQUECIMIENTO — ÉXITO.COM
+  Fecha de ejecución: 2026-05-29 02:41:32
+============================================================
+
+[1/4] Cargando datos desde productos_exito.json...
+      1050 registros crudos cargados.
+
+[2/4] Aplicando transformaciones y enriquecimiento...
+      712 registros → 684 tras deduplicación.
+
+      ── Estadísticas de enriquecimiento ──
+      Con precio_venta:        518
+      Con descuento:           469
+      Descuento promedio:    42.1%
+      Ahorro promedio:       $636,527
+      Con conectividad 5G:      51
+      Con dato de RAM:          46
+      Con almacenamiento:      108
+
+      Distribución por rango de precio:
+        alto          204 productos
+        sin_precio    166 productos
+        medio         163 productos
+        bajo           81 productos
+        premium        70 productos
+
+      Distribución por subcategoría (top 10):
+        mercado                    108
+        celular                     93
+        cuidado-personal            79
+        hogar                       58
+        televisor                   53
+        fragancias                  50
+        bebes                       48
+        lácteos                     33
+        mueble                      29
+        cuidado_piel                28
+
+────────────────────────────────────────────────────────────
+  VALIDACIONES DE CALIDAD
+────────────────────────────────────────────────────────────
+  V1 nombre_limpio sin nulos       ✓ PASS
+  V2 precio_venta > 0              ✓ PASS
+  V3 precio_original >= precio_venta ✓ PASS
+  V4 sin duplicados (nombre+cat)   ✓ PASS
+  V5 rango_precio completo         INFO (166 sin precio → sin_precio)
+  V6 descuento_pct en [1-99]       ✓ PASS
+
+  Resultado: 6/6 validaciones pasadas.
+
+[3/4] Guardando archivos de salida...
+      CSV guardado: productos_enriquecidos.csv
+      JSON guardado: productos_enriquecidos.json
+
+[4/4] Cargando a SQLite (consumo_masivo.db)...
+      684 registros insertados en tabla "productos_enriquecidos".
+      Índices creados correctamente.
+
+────────────────────────────────────────────────────────────
+  ANÁLISIS DE LA BASE DE DATOS
+────────────────────────────────────────────────────────────
+  Total de productos enriquecidos                 684
+  Productos con descuento                         469
+  Descuento promedio (%)                         42.1
+  Ahorro promedio (COP)                     636,527.0
+  Precio venta mínimo                         1,060.0
+  Precio venta máximo                     5,757,900.0
+  Precio venta promedio                     682,414.0
+  Productos con 5G                                 51
+
+  Productos por categoría:
+    mercado                 150 productos   precio prom: $3,652
+    cuidado-personal        108 productos   precio prom: $62,516
+    tecnologia               96 productos   precio prom: $1,457,290
+    hogar                    87 productos   precio prom: $352,512
+    belleza                  83 productos   precio prom: $135,801
+    bebes                    80 productos   precio prom: $202,852
+    celulares                80 productos   precio prom: $1,884,134
+
+  Top 5 subcategorías por descuento promedio:
+    audio                        8 productos   descuento prom: 57.9%
+    televisor                   50 productos   descuento prom: 54.0%
+    lácteos                     13 productos   descuento prom: 52.0%
+    colchón                     14 productos   descuento prom: 51.6%
+    celulares                    3 productos   descuento prom: 46.7%
+
+============================================================
+  PIPELINE COMPLETADO EN 0.1 segundos
+  Validaciones fallidas: 0
+  Archivos generados:
+    - productos_enriquecidos.csv
+    - productos_enriquecidos.json
+    - consumo_masivo.db  (tabla: productos_enriquecidos)
+    - auditoria.txt
+============================================================
