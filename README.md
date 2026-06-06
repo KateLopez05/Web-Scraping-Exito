@@ -30,19 +30,30 @@ Aplicar técnicas de Web Scraping para recolectar información relevante desde u
 ## Estructura del proyecto
 
 ```text
-Entrega_2/
-│
-├── config.py                                          # Configuración de Selenium WebDriver
-├── extraccion.py                                      # Módulo de extracción (scraping)
-├── procesamiento.py                                   # Limpieza y transformación de datos
-├── ingesta.py                                         # Carga de datos a SQLite
-├── limpiar_bd.py                                      # Limpieza de base de datos
-├── productos_exito.csv                                # Datos en formato CSV
-├── productos_exito.json                               # Datos en formato JSON
-├── consumo_masivo.db                                  # Base de datos SQLite
-├── requirements.txt                                   # Dependencias del proyecto
-├── README.md                                          # Este archivo
-└── LopezKaterin_MezaBayron_Entendimiento_Necesidad_EA2.ipynb  # Notebook principal
+## 📁 Estructura del Proyecto
+
+```
+Web Scraping Exito/
+├── Proyecto/
+│   ├── auditoria.txt               # Registro de ejecuciones y eventos
+│   ├── config.py                   # Configuración general del proyecto
+│   ├── consumo_masivo.db           # Base de datos SQLite
+│   ├── ejecucion.py                # Punto de entrada principal
+│   ├── extraccion.py               # Lógica de extracción de datos
+│   ├── ingesta.py                  # Carga de datos a la BD
+│   ├── limpiar_bd.py               # Limpieza y mantenimiento de la BD
+│   ├── modelo.py                   # Definición de modelos de datos
+│   ├── procesamiento.py            # Transformación y procesamiento
+│   ├── scrapper.py                 # Scraper principal (Éxito)
+│   ├── productos_exito.csv         # Datos crudos extraídos (CSV)
+│   ├── productos_exito.json        # Datos crudos extraídos (JSON)
+│   ├── productos_enriquecidos.csv  # Datos procesados (CSV)
+│   ├── productos_enriquecidos.json # Datos procesados (JSON)
+│   └── LopezKaterin_MezaBayron_Entendimiento_Necesidad_EA2.ipynb  # Notebook de análisis
+├── .gitignore
+├── README.md
+└── requirements.txt
+```
 ```
 
 ---
