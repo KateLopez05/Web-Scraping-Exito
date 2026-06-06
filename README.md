@@ -409,10 +409,6 @@ El formato de precios colombiano ($1.999.900) requirió expresiones regulares es
 
 ## Licencia
 
-Este proyecto fue desarrollado con fines académicos como parte de la evidencia de aprendizaje 2 del curso de Programación para Análisis de Datos.
+Este proyecto fue desarrollado con fines académicos como parte de las evidencias de aprendizaje del curso de Programación para Análisis de Datos.
 
 ---
-
-## Soporte
-
-Para reportar problemas o sugerencias, contactar a los autores mediante la plataforma del curso.
