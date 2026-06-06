@@ -150,32 +150,12 @@ El proyecto utiliza SQLite como motor de base de datos relacional.
 Ubicarse en la carpeta del proyecto:
 
 ```bash
-cd "Entrega_2"
+cd "Proyecto"
 ```
 
 ---
 
-### 2. Crear entorno virtual (opcional pero recomendado)
-
-```bash
-python -m venv venv
-```
-
-#### Activar entorno virtual
-
-**Windows:**
-```bash
-venv\Scripts\activate
-```
-
-**Linux/Mac:**
-```bash
-source venv/bin/activate
-```
-
----
-
-### 3. Instalar dependencias
+### 2. Instalar dependencias
 
 ```bash
 pip install -r requirements.txt
